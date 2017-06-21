@@ -13,6 +13,10 @@
 		B8EC4C7C1EFA485B0029134C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EC4C7B1EFA485B0029134C /* Assets.xcassets */; };
 		B8EC4C7F1EFA485B0029134C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EC4C7D1EFA485B0029134C /* LaunchScreen.storyboard */; };
 		B8EC4C821EFA485B0029134C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EC4C811EFA485B0029134C /* main.m */; };
+		B8EC4C8C1EFA501F0029134C /* CFCollectionBtnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EC4C8B1EFA501F0029134C /* CFCollectionBtnModel.m */; };
+		B8EC4C8F1EFA50470029134C /* CFCollectionBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EC4C8E1EFA50470029134C /* CFCollectionBtnView.m */; };
+		B8EC4C921EFA55A30029134C /* CFCollectionBtnViewTypeImageTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EC4C911EFA55A30029134C /* CFCollectionBtnViewTypeImageTitleCell.m */; };
+		B8EC4C951EFA55BE0029134C /* CFCollectionBtnViewTypeTitleDescCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EC4C941EFA55BE0029134C /* CFCollectionBtnViewTypeTitleDescCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,14 @@
 		B8EC4C801EFA485B0029134C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8EC4C811EFA485B0029134C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8EC4C891EFA48F70029134C /* CFKit_Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFKit_Define.h; sourceTree = "<group>"; };
+		B8EC4C8A1EFA501F0029134C /* CFCollectionBtnModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFCollectionBtnModel.h; sourceTree = "<group>"; };
+		B8EC4C8B1EFA501F0029134C /* CFCollectionBtnModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFCollectionBtnModel.m; sourceTree = "<group>"; };
+		B8EC4C8D1EFA50470029134C /* CFCollectionBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFCollectionBtnView.h; sourceTree = "<group>"; };
+		B8EC4C8E1EFA50470029134C /* CFCollectionBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFCollectionBtnView.m; sourceTree = "<group>"; };
+		B8EC4C901EFA55A30029134C /* CFCollectionBtnViewTypeImageTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFCollectionBtnViewTypeImageTitleCell.h; sourceTree = "<group>"; };
+		B8EC4C911EFA55A30029134C /* CFCollectionBtnViewTypeImageTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFCollectionBtnViewTypeImageTitleCell.m; sourceTree = "<group>"; };
+		B8EC4C931EFA55BE0029134C /* CFCollectionBtnViewTypeTitleDescCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFCollectionBtnViewTypeTitleDescCell.h; sourceTree = "<group>"; };
+		B8EC4C941EFA55BE0029134C /* CFCollectionBtnViewTypeTitleDescCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFCollectionBtnViewTypeTitleDescCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +73,10 @@
 			children = (
 				B8EC4C881EFA48BB0029134C /* CFCollectionButton  */,
 				B8EC4C721EFA485B0029134C /* AppDelegate.h */,
-				B8EC4C891EFA48F70029134C /* CFKit_Define.h */,
 				B8EC4C731EFA485B0029134C /* AppDelegate.m */,
 				B8EC4C751EFA485B0029134C /* ViewController.h */,
 				B8EC4C761EFA485B0029134C /* ViewController.m */,
+				B8EC4C891EFA48F70029134C /* CFKit_Define.h */,
 				B8EC4C781EFA485B0029134C /* Main.storyboard */,
 				B8EC4C7B1EFA485B0029134C /* Assets.xcassets */,
 				B8EC4C7D1EFA485B0029134C /* LaunchScreen.storyboard */,
@@ -77,6 +89,14 @@
 		B8EC4C881EFA48BB0029134C /* CFCollectionButton  */ = {
 			isa = PBXGroup;
 			children = (
+				B8EC4C8A1EFA501F0029134C /* CFCollectionBtnModel.h */,
+				B8EC4C8B1EFA501F0029134C /* CFCollectionBtnModel.m */,
+				B8EC4C8D1EFA50470029134C /* CFCollectionBtnView.h */,
+				B8EC4C8E1EFA50470029134C /* CFCollectionBtnView.m */,
+				B8EC4C901EFA55A30029134C /* CFCollectionBtnViewTypeImageTitleCell.h */,
+				B8EC4C911EFA55A30029134C /* CFCollectionBtnViewTypeImageTitleCell.m */,
+				B8EC4C931EFA55BE0029134C /* CFCollectionBtnViewTypeTitleDescCell.h */,
+				B8EC4C941EFA55BE0029134C /* CFCollectionBtnViewTypeTitleDescCell.m */,
 			);
 			path = "CFCollectionButton ";
 			sourceTree = "<group>";
@@ -152,8 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8EC4C771EFA485B0029134C /* ViewController.m in Sources */,
+				B8EC4C951EFA55BE0029134C /* CFCollectionBtnViewTypeTitleDescCell.m in Sources */,
+				B8EC4C921EFA55A30029134C /* CFCollectionBtnViewTypeImageTitleCell.m in Sources */,
 				B8EC4C821EFA485B0029134C /* main.m in Sources */,
 				B8EC4C741EFA485B0029134C /* AppDelegate.m in Sources */,
+				B8EC4C8F1EFA50470029134C /* CFCollectionBtnView.m in Sources */,
+				B8EC4C8C1EFA501F0029134C /* CFCollectionBtnModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +346,7 @@
 				B8EC4C871EFA485B0029134C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
