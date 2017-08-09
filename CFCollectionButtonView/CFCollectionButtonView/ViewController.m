@@ -143,6 +143,14 @@ static NSString * const kCellID = @"ViewControllerCell";
         self.tableView.rowHeight = UITableViewAutomaticDimension;
 
         [self.view addSubview:self.tableView];
+
+
+
+        self.gridView.frame = CGRectMake(0, 0, CFKit_SCREEN_WIDTH, kGridView_H);
+        self.tableView.tableHeaderView = self.gridView;
+
+        self.gridView2.frame = CGRectMake(0, 0, CFKit_SCREEN_WIDTH, kGridView_H2);
+        self.tableView.tableFooterView = self.gridView2;
     }
     return _tableView;
 }
@@ -151,7 +159,8 @@ static NSString * const kCellID = @"ViewControllerCell";
 {
     if (!_dataArray)
     {
-        _dataArray = @[@"图上文下", @"两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字"];
+//        _dataArray = @[@"图上文下", @"两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字两行文字"];
+        _dataArray = [NSArray array];
     }
     return _dataArray;
 }
